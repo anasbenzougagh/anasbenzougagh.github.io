@@ -2249,6 +2249,21 @@ header.majorCC:after {
     width: 75%;
 }
 
+header.majorBL {
+    margin: 0 0 4em 0;
+    position: relative;
+    text-align: center;
+}
+
+header.majorBL:after {
+    background: #946243;
+    content: '';
+    display: inline-block;
+    height: 0.2em;
+    max-width: 20em;
+    width: 75%;
+}
+
 header.majorCC {
     margin: 0 0 4em 0;
     position: relative;
@@ -3000,7 +3015,45 @@ input[type="button"]:active,
     color: #39C088 !important;
 }
 
+/* ButtonBL */
 
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.buttonBL {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 3em;
+    line-height: 3em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+input[type="submit"]:hover, input[type="submit"]:active,
+input[type="reset"]:hover,
+input[type="reset"]:active,
+input[type="button"]:hover,
+input[type="button"]:active,
+.buttonBL:hover,
+.buttonBL:active {
+    box-shadow: inset 0 0 0 1px #946243;
+    color: #946243 !important;
+}
 
 input[type="submit"]:active,
 input[type="reset"]:active,
@@ -3291,6 +3344,10 @@ input[type="button"]:disabled,
 
 .spotlight.style3 .content {
     border-color: #39c088;
+}
+
+.spotlight.style4 .content {
+    border-color: #946243;
 }
 
 .spotlight.inactive .content {

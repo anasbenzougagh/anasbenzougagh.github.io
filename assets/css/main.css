@@ -31,6 +31,34 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* Indicates interactivity */
+    cursor: pointer; /* Indicates that the item can be interacted with */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Positioning the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 body {
     line-height: 1;
 }

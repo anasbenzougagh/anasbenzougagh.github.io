@@ -51,7 +51,7 @@ footer, header, hgroup, menu, nav, section {
     position: absolute;
     z-index: 1;
     top: 130%;
-    left: 75%;
+    left: 50%;
     transform: translateX(-50%);
 }
 

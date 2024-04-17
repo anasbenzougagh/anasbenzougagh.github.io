@@ -2586,11 +2586,11 @@ input[type="radio"] + label:before {
     border-radius: 100%;
     cursor: default;
     display: inline-block;
-    height: 6em;
+    height: 5em;
     line-height: 5.65em;
     margin: 0 0 2em 0;
     text-align: center;
-    width: 6em;
+    width: 5em;
 }
 
 .icon.major:before {
